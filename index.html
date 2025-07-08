@@ -15,6 +15,8 @@
                 <li><a href="#home">Início</a></li>
                 <li><a href="#services">Serviços</a></li>
                 <li><a href="#about">Sobre</a></li>
+                <li><a href="#contact">Contato</a></li>
+                <li><a href="#register">Cadastro</a></li>
             </ul>
             <div class="menu-toggle">
                 <i class="fas fa-bars"></i>
@@ -80,6 +82,130 @@
             </div>
         </div>
     </section>
+    
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Entre em Contato</h2>
+            <form id="contactForm" class="form">
+                <div class="form-group">
+                    <label for="contactName">Nome</label>
+                    <input type="text" id="contactName" name="name" required>
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="contactEmail">Email</label>
+                    <input type="email" id="contactEmail" name="email" required>
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="contactPhone">Telefone</label>
+                    <input type="tel" id="contactPhone" name="phone">
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="contactMessage">Mensagem</label>
+                    <textarea id="contactMessage" name="message" rows="5" required></textarea>
+                    <span class="error-message"></span>
+                </div>
+                <button type="submit" class="btn">Enviar Mensagem</button>
+                <div id="contactSuccess" class="success-message"></div>
+            </form>
+        </div>
+    </section>
+
+    <section id="newsletter" class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Assine nossa Newsletter</h2>
+                <p>Receba as últimas novidades e promoções diretamente no seu email.</p>
+                <form id="newsletterForm" class="newsletter-form">
+                    <input type="email" id="newsletterEmail" placeholder="Seu melhor email" required>
+                    <button type="submit" class="btn">Assinar</button>
+                </form>
+                <div id="newsletterMessage" class="newsletter-message"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="register" class="register">
+        <div class="container">
+            <h2 class="section-title">Cadastre-se</h2>
+            <form id="registerForm" class="form">
+                <div class="form-group">
+                    <label for="registerName">Nome Completo</label>
+                    <input type="text" id="registerName" name="name" required>
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="registerEmail">Email</label>
+                    <input type="email" id="registerEmail" name="email" required>
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="registerPassword">Senha</label>
+                    <input type="password" id="registerPassword" name="password" required minlength="6">
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="registerConfirmPassword">Confirme sua Senha</label>
+                    <input type="password" id="registerConfirmPassword" name="confirmPassword" required>
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="registerPlan">Plano de Interesse</label>
+                    <select id="registerPlan" name="plan">
+                        <option value="">Selecione um plano</option>
+                        <option value="basic">Básico</option>
+                        <option value="professional">Profissional</option>
+                        <option value="enterprise">Empresarial</option>
+                    </select>
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="registerTerms" name="terms" required>
+                    <label for="registerTerms">Aceito os termos de uso e política de privacidade</label>
+                    <span class="error-message"></span>
+                </div>
+                <button type="submit" class="btn">Cadastrar</button>
+                <div id="registerSuccess" class="success-message"></div>
+            </form>
+        </div>
+    </section>
+
+    <section id="suggestions" class="suggestions">
+        <div class="container">
+            <h2 class="section-title">Envie suas Sugestões</h2>
+            <form id="suggestionsForm" class="form">
+                <div class="form-group">
+                    <label for="suggestionsName">Seu Nome</label>
+                    <input type="text" id="suggestionsName" name="name">
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="suggestionsEmail">Seu Email</label>
+                    <input type="email" id="suggestionsEmail" name="email">
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="suggestionsType">Tipo de Sugestão</label>
+                    <select id="suggestionsType" name="type">
+                        <option value="service">Melhoria em Serviço</option>
+                        <option value="product">Novo Produto</option>
+                        <option value="website">Site/Interface</option>
+                        <option value="other">Outro</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="suggestionsMessage">Sua Sugestão</label>
+                    <textarea id="suggestionsMessage" name="message" rows="5" required></textarea>
+                    <span class="error-message"></span>
+                </div>
+                <button type="submit" class="btn">Enviar Sugestão</button>
+                <div id="suggestionsSuccess" class="success-message"></div>
+            </form>
+        </div>
+    </section>
+
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
@@ -93,6 +219,9 @@
                         <li><a href="#home">Início</a></li>
                         <li><a href="#services">Serviços</a></li>
                         <li><a href="#about">Sobre</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                        <li><a href="#register">Cadastro</a></li>
+                        <li><a href="#suggestions">Sugestões</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -107,5 +236,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
